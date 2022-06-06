@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C9866C284DB2C1004C90B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C9866B284DB2C1004C90B5 /* AppDelegate.swift */; };
+		85C9866E284DB2C1004C90B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C9866D284DB2C1004C90B5 /* SceneDelegate.swift */; };
+		85C98670284DB2C1004C90B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C9866F284DB2C1004C90B5 /* ViewController.swift */; };
+		85C98673284DB2C1004C90B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C98671284DB2C1004C90B5 /* Main.storyboard */; };
+		85C98676284DB2C1004C90B5 /* ClickPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C98674284DB2C1004C90B5 /* ClickPhoto.xcdatamodeld */; };
+		85C98678284DB2C2004C90B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C98677284DB2C2004C90B5 /* Assets.xcassets */; };
+		85C9867B284DB2C2004C90B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C98679284DB2C2004C90B5 /* LaunchScreen.storyboard */; };
+		85C98686284DB2C2004C90B5 /* ClickPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C98685284DB2C2004C90B5 /* ClickPhotoTests.swift */; };
+		85C98690284DB2C2004C90B5 /* ClickPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C9868F284DB2C2004C90B5 /* ClickPhotoUITests.swift */; };
+		85C98692284DB2C2004C90B5 /* ClickPhotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C98691284DB2C2004C90B5 /* ClickPhotoUITestsLaunchTests.swift */; };
+		85C986A7284DCAE9004C90B5 /* PersistanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C986A6284DCAE9004C90B5 /* PersistanceServices.swift */; };
+		85C986AA284DCC76004C90B5 /* UserPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C986A8284DCC76004C90B5 /* UserPhoto+CoreDataClass.swift */; };
+		85C986AB284DCC76004C90B5 /* UserPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C986A9284DCC76004C90B5 /* UserPhoto+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C98682284DB2C2004C90B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C98660284DB2C1004C90B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C98667284DB2C1004C90B5;
+			remoteInfo = ClickPhoto;
+		};
+		85C9868C284DB2C2004C90B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C98660284DB2C1004C90B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C98667284DB2C1004C90B5;
+			remoteInfo = ClickPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85C98668284DB2C1004C90B5 /* ClickPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C9866B284DB2C1004C90B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85C9866D284DB2C1004C90B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85C9866F284DB2C1004C90B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C98672284DB2C1004C90B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C98675284DB2C1004C90B5 /* ClickPhoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClickPhoto.xcdatamodel; sourceTree = "<group>"; };
+		85C98677284DB2C2004C90B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C9867A284DB2C2004C90B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C9867C284DB2C2004C90B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C98681284DB2C2004C90B5 /* ClickPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C98685284DB2C2004C90B5 /* ClickPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickPhotoTests.swift; sourceTree = "<group>"; };
+		85C9868B284DB2C2004C90B5 /* ClickPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C9868F284DB2C2004C90B5 /* ClickPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickPhotoUITests.swift; sourceTree = "<group>"; };
+		85C98691284DB2C2004C90B5 /* ClickPhotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickPhotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85C986A6284DCAE9004C90B5 /* PersistanceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceServices.swift; sourceTree = "<group>"; };
+		85C986A8284DCC76004C90B5 /* UserPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserPhoto+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		85C986A9284DCC76004C90B5 /* UserPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserPhoto+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C98665284DB2C1004C90B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C9867E284DB2C2004C90B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C98688284DB2C2004C90B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C9865F284DB2C1004C90B5 = {
+			isa = PBXGroup;
+			children = (
+				85C9866A284DB2C1004C90B5 /* ClickPhoto */,
+				85C98684284DB2C2004C90B5 /* ClickPhotoTests */,
+				85C9868E284DB2C2004C90B5 /* ClickPhotoUITests */,
+				85C98669284DB2C1004C90B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85C98669284DB2C1004C90B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C98668284DB2C1004C90B5 /* ClickPhoto.app */,
+				85C98681284DB2C2004C90B5 /* ClickPhotoTests.xctest */,
+				85C9868B284DB2C2004C90B5 /* ClickPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C9866A284DB2C1004C90B5 /* ClickPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				85C986A5284DCAC3004C90B5 /* CoreDataFile */,
+				85C986A4284DCA18004C90B5 /* CoreEntityModel */,
+				85C9866B284DB2C1004C90B5 /* AppDelegate.swift */,
+				85C9866D284DB2C1004C90B5 /* SceneDelegate.swift */,
+				85C9866F284DB2C1004C90B5 /* ViewController.swift */,
+				85C98671284DB2C1004C90B5 /* Main.storyboard */,
+				85C98677284DB2C2004C90B5 /* Assets.xcassets */,
+				85C98679284DB2C2004C90B5 /* LaunchScreen.storyboard */,
+				85C9867C284DB2C2004C90B5 /* Info.plist */,
+				85C98674284DB2C1004C90B5 /* ClickPhoto.xcdatamodeld */,
+			);
+			path = ClickPhoto;
+			sourceTree = "<group>";
+		};
+		85C98684284DB2C2004C90B5 /* ClickPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C98685284DB2C2004C90B5 /* ClickPhotoTests.swift */,
+			);
+			path = ClickPhotoTests;
+			sourceTree = "<group>";
+		};
+		85C9868E284DB2C2004C90B5 /* ClickPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C9868F284DB2C2004C90B5 /* ClickPhotoUITests.swift */,
+				85C98691284DB2C2004C90B5 /* ClickPhotoUITestsLaunchTests.swift */,
+			);
+			path = ClickPhotoUITests;
+			sourceTree = "<group>";
+		};
+		85C986A4284DCA18004C90B5 /* CoreEntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				85C986A8284DCC76004C90B5 /* UserPhoto+CoreDataClass.swift */,
+				85C986A9284DCC76004C90B5 /* UserPhoto+CoreDataProperties.swift */,
+			);
+			path = CoreEntityModel;
+			sourceTree = "<group>";
+		};
+		85C986A5284DCAC3004C90B5 /* CoreDataFile */ = {
+			isa = PBXGroup;
+			children = (
+				85C986A6284DCAE9004C90B5 /* PersistanceServices.swift */,
+			);
+			path = CoreDataFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C98667284DB2C1004C90B5 /* ClickPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C98695284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhoto" */;
+			buildPhases = (
+				85C98664284DB2C1004C90B5 /* Sources */,
+				85C98665284DB2C1004C90B5 /* Frameworks */,
+				85C98666284DB2C1004C90B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickPhoto;
+			productName = ClickPhoto;
+			productReference = 85C98668284DB2C1004C90B5 /* ClickPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C98680284DB2C2004C90B5 /* ClickPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C98698284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhotoTests" */;
+			buildPhases = (
+				85C9867D284DB2C2004C90B5 /* Sources */,
+				85C9867E284DB2C2004C90B5 /* Frameworks */,
+				85C9867F284DB2C2004C90B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C98683284DB2C2004C90B5 /* PBXTargetDependency */,
+			);
+			name = ClickPhotoTests;
+			productName = ClickPhotoTests;
+			productReference = 85C98681284DB2C2004C90B5 /* ClickPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C9868A284DB2C2004C90B5 /* ClickPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C9869B284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhotoUITests" */;
+			buildPhases = (
+				85C98687284DB2C2004C90B5 /* Sources */,
+				85C98688284DB2C2004C90B5 /* Frameworks */,
+				85C98689284DB2C2004C90B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C9868D284DB2C2004C90B5 /* PBXTargetDependency */,
+			);
+			name = ClickPhotoUITests;
+			productName = ClickPhotoUITests;
+			productReference = 85C9868B284DB2C2004C90B5 /* ClickPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C98660284DB2C1004C90B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					85C98667284DB2C1004C90B5 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					85C98680284DB2C2004C90B5 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 85C98667284DB2C1004C90B5;
+					};
+					85C9868A284DB2C2004C90B5 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 85C98667284DB2C1004C90B5;
+					};
+				};
+			};
+			buildConfigurationList = 85C98663284DB2C1004C90B5 /* Build configuration list for PBXProject "ClickPhoto" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C9865F284DB2C1004C90B5;
+			productRefGroup = 85C98669284DB2C1004C90B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C98667284DB2C1004C90B5 /* ClickPhoto */,
+				85C98680284DB2C2004C90B5 /* ClickPhotoTests */,
+				85C9868A284DB2C2004C90B5 /* ClickPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C98666284DB2C1004C90B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C9867B284DB2C2004C90B5 /* LaunchScreen.storyboard in Resources */,
+				85C98678284DB2C2004C90B5 /* Assets.xcassets in Resources */,
+				85C98673284DB2C1004C90B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C9867F284DB2C2004C90B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C98689284DB2C2004C90B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C98664284DB2C1004C90B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C98670284DB2C1004C90B5 /* ViewController.swift in Sources */,
+				85C986A7284DCAE9004C90B5 /* PersistanceServices.swift in Sources */,
+				85C9866C284DB2C1004C90B5 /* AppDelegate.swift in Sources */,
+				85C9866E284DB2C1004C90B5 /* SceneDelegate.swift in Sources */,
+				85C98676284DB2C1004C90B5 /* ClickPhoto.xcdatamodeld in Sources */,
+				85C986AB284DCC76004C90B5 /* UserPhoto+CoreDataProperties.swift in Sources */,
+				85C986AA284DCC76004C90B5 /* UserPhoto+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C9867D284DB2C2004C90B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C98686284DB2C2004C90B5 /* ClickPhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C98687284DB2C2004C90B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C98692284DB2C2004C90B5 /* ClickPhotoUITestsLaunchTests.swift in Sources */,
+				85C98690284DB2C2004C90B5 /* ClickPhotoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C98683284DB2C2004C90B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C98667284DB2C1004C90B5 /* ClickPhoto */;
+			targetProxy = 85C98682284DB2C2004C90B5 /* PBXContainerItemProxy */;
+		};
+		85C9868D284DB2C2004C90B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C98667284DB2C1004C90B5 /* ClickPhoto */;
+			targetProxy = 85C9868C284DB2C2004C90B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C98671284DB2C1004C90B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C98672284DB2C1004C90B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85C98679284DB2C2004C90B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C9867A284DB2C2004C90B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C98693284DB2C2004C90B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85C98694284DB2C2004C90B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C98696284DB2C2004C90B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer: suresh rewar (57K8TFV28K)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2H937WT3V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClickPhoto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = vtswatsoodevelopment;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85C98697284DB2C2004C90B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer: suresh rewar (57K8TFV28K)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2H937WT3V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClickPhoto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = vtswatsoodevelopment;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85C98699284DB2C2004C90B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo.ClickPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickPhoto.app/ClickPhoto";
+			};
+			name = Debug;
+		};
+		85C9869A284DB2C2004C90B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo.ClickPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickPhoto.app/ClickPhoto";
+			};
+			name = Release;
+		};
+		85C9869C284DB2C2004C90B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo.ClickPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClickPhoto;
+			};
+			name = Debug;
+		};
+		85C9869D284DB2C2004C90B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vts.watsoo.ClickPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClickPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C98663284DB2C1004C90B5 /* Build configuration list for PBXProject "ClickPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C98693284DB2C2004C90B5 /* Debug */,
+				85C98694284DB2C2004C90B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C98695284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C98696284DB2C2004C90B5 /* Debug */,
+				85C98697284DB2C2004C90B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C98698284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C98699284DB2C2004C90B5 /* Debug */,
+				85C9869A284DB2C2004C90B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C9869B284DB2C2004C90B5 /* Build configuration list for PBXNativeTarget "ClickPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C9869C284DB2C2004C90B5 /* Debug */,
+				85C9869D284DB2C2004C90B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85C98674284DB2C1004C90B5 /* ClickPhoto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85C98675284DB2C1004C90B5 /* ClickPhoto.xcdatamodel */,
+			);
+			currentVersion = 85C98675284DB2C1004C90B5 /* ClickPhoto.xcdatamodel */;
+			path = ClickPhoto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85C98660284DB2C1004C90B5 /* Project object */;
+}

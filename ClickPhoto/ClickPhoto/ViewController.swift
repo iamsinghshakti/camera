@@ -66,6 +66,23 @@ class ViewController: UIViewController {
         layer.opacity = 0.8
         cameraView.layer.addSublayer(layer)
     }
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if error != nil {
+            let alert = UIAlertController(title: "Failure", message: "\(error!.localizedDescription)", preferredStyle: .alert)
+               let action = UIAlertAction(title: "OK", style: .default)
+               alert.addAction(action)
+               self.present(alert, animated: true)
+           } else {
+               let alert = UIAlertController(title: "Success", message: "Image save successfully in your photo library!", preferredStyle: .alert)
+               let action = UIAlertAction(title: "OK", style: .default)
+               alert.addAction(action)
+               self.present(alert, animated: true)
+           }
+       }
 }
 extension ViewController:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     
@@ -80,14 +97,14 @@ extension ViewController:UIImagePickerControllerDelegate,UINavigationControllerD
             return
         }
         self.imagView.image = image
-        guard let resizedIMg = image.pngData() else {return}
+        guard let pngData = image.pngData() else {return}
+          UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
         PersistenceService.sharedIns.deleteAllData("UserPhoto")
         let context = UserPhoto(context: PersistenceService.sharedIns.context)
-        context.photo = resizedIMg
+        context.photo = pngData
         PersistenceService.sharedIns.saveContext { status in
             print("save")
         }
-      
         self.dismiss(animated: true) {
             
         }
